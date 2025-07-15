@@ -1,0 +1,138 @@
+body{
+        background: #020024;
+    background: linear-gradient(182deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 14%, rgba(0, 212, 255, 1) 100%);
+    
+}
+.nav-bar{
+    display: flex;
+    justify-content: center;
+    gap:8px;
+    margin: auto;
+    li{
+        list-style-type: none;
+        a{
+            text-decoration: none;
+            color: rgb(248, 244, 244);
+            font-size: large;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: bold;
+        }
+        a:hover{
+            color: rgb(36, 4, 124);
+        }
+    }
+}
+.heading{
+    justify-items: center;
+    h1,p{
+        color:white
+    }
+}
+.dongle{
+    background: #020024;
+    background: linear-gradient(182deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 14%, rgba(0, 212, 255, 1) 100%);
+    border: 2px solid white;
+    border-radius: 15px;
+    .def{
+        align-items: center;
+        justify-items: center;
+        h2,p{
+            color:white;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    }
+.dongle:hover{
+    transform: translateY(0.5em);
+    box-shadow: 2px 2px 4px black;
+    
+}
+.work{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    .step{
+        border: 2px solid white;
+        border-radius: 15px;
+        margin: 10px;
+        h2{
+            text-align: center;
+            color: white;
+        }
+        p{
+            text-align: center;
+            color: white;
+        }
+    }
+    .step:hover{
+        transform: translateY(0.5em);
+        box-shadow: 2px 2px 4px black;
+    }
+    }
+}
+.networks{
+    border: 2px solid white;
+    border-radius: 15px;
+    background: #020024;
+    background: linear-gradient(352deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 14%, rgba(0, 212, 255, 1) 100%);
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+
+    .collabs{
+        border: 2px solid white;
+        border-radius: 15px;
+        margin: 10px;
+        h2{
+            text-align: center;
+            color: white;
+        }
+        p{
+            text-align: center;
+            color: white;
+        }
+    }
+    .collabs:hover{
+        transform: translateY(0.5em);
+        box-shadow: 2px 2px 4px black;
+    }
+    .contain{
+        .networking{
+            border: 2px solid white;
+        border-radius: 15px;
+        padding: 15px;
+        h2{
+            text-align: center;
+            color: white;
+        }
+        p{
+            color: white;
+        }
+        }
+        .networking:hover{
+        transform: translateY(0.5em);
+        box-shadow: 2px 2px 4px black;
+    }
+    .functionality{
+            border: 2px solid white;
+        border-radius: 15px;
+        padding: 15px;
+        h2{
+            text-align: center;
+            color: white;
+        }
+        p{
+            color: white;
+        }
+        }
+        .functionality:hover{
+        transform: translateY(0.5em);
+        box-shadow: 2px 2px 4px black;
+    }
+    
+    }
+}
+.audio{
+        height:30px;
+        align-self: center;
+        align-content: center;
+        justify-content: center;
+        padding: 100px;
+    }
