@@ -31,6 +31,5 @@ A simple web page that explores networking components, wireless connections, and
 - Update styles in [`styles.css`](styles.css) for a different look.
 - Replace the audio file with your own by updating the `<source>` in the HTML.
 
-## License
-
-This project is for
+link
+https://docs.google.com/document/d/1obd_jz7msTrhEttaVCFvcYujT_nCD-LBE9NGc-t-qAo/edit?usp=sharing
