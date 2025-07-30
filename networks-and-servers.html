@@ -4,89 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>networking.aware</title>
-    <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <nav>
         <ul class="nav-bar">
-            <li><a href="#home">home</a></li>
-            <li><a href="#content">content</a></li>
-            <li><a href="#audio">audio</a></li>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#content">Content</a></li>
+            <li><a href="#audio">Audio</a></li>
         </ul>
     </nav>
-    <div class="heading">
-        <h1>networking.aware</h1>
-        <p>a web page that looks at a few networking components</p>
-    </div>
-    <div class="dongle">
-        <div class="def">
-            <h2>Wi-fi USB Dongle</h2>
-            <p>a small device that enables a computer or other devices to connect to a wireless network</p>
-        </div>
-        <div class="work">
-            <div class="step">
-                <h2>Plug in the Dongle</h2>
-               <p>Insert the USB WiFi adapter into an available USB port on your computer or device</p>            
-            </div>
-            <div class="step">
-                <h2>Install Drivers</h2>
-                <p> insert the included driver CD or download drivers from the manufacturer’s website.</p> 
-            </div>
-            <div class="step">
-                <h2>Connect to WiFi</h2>
-                <p>Click the WiFi/Network icon (🌐) in your system tray (Windows) or menu bar (macOS).
-                    <br>Select your WiFi network name (SSID) and enter the password.
-                    <br>Once connected, you’re ready to browse!</p> 
-            </div>
-        </div>
-    </div>
-    <div class="networks">
-        <div class="contain1">
-            <div class="collabs">
-            <h2>Internet Collaboration</h2>
-            <p>Cloud platforms, real-time editors, and video calls enable seamless global collaboration.
-                 APIs integrate tools, while AI assists with workflows—turning distant teams into a unified force,
-                  innovating faster across borders.</p>
-        </div>
-        <div class="audio">
-            <audio controls>
-  <source src="audio.mp3" type="audio/mp3">
-  Your browser does not support the audio element.
-</audio>
-        </div>
-        </div>
-        <div class="contain">
-            <div class="networking">
-                <h2>Networking & Wireless connection</h2>
-                <p>
-                    <b>Networking</b> and wireless connections are crucial for devices to communicate and share resources.
-                    it involves connecting devices for data and resource sharing.<br>
-                    Key aspects include:<br>
-                    Network Topologies: How devices are arranged (e.g., Star, Bus).
-                    <br>Network Devices: Hardware like Routers, Switches, Modems, and Network Interface Cards (NICs) that enable connectivity.
-                    <br>Network Protocols: Rules for data transmission (e.g., TCP/IP, HTTP).
-                    <br>Types of Networks: Differentiated by size and scope (e.g., LAN for small areas, WAN for large areas like the internet).
-                    <br>Wireless Connections allow communication without cables, using technologies like:
-                    <br>Wi-Fi: The most common wireless LAN technology, based on 802.11 standards (e.g., Wi-Fi 6 for faster speeds).
-                    <br>Bluetooth: Short-range for personal devices.<br>
-                    
-                </p>
-            </div>
-            <div class="functionality">
-                <h2>Functionality of server networks</h2>
-                <p>
-                    Server networks provide centralized services, resources, and management to client devices. Their main functions include:
-                    Serving Client Requests: Responding to requests for web pages, emails, applications, etc.
-                    Data Storage & Management: Storing and managing large amounts of data (files, databases) centrally.
-                    Resource Sharing: Managing shared resources like printers and automatically assigning IP addresses (DHCP).
-                    Network Management & Control: Directing network traffic and handling user authentication/authorization (DNS).
-                    Security & Data Protection: Implementing firewalls, encryption, access controls, and backups to protect data and resources.
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="audio">
 
+    <section id="home" class="heading">
+        <h1>networking.aware</h1>
+        <p>Exploring the essential components of modern networking</p>
+    </section>
+
+    <div class="container">
+        <section id="content">
+            <!-- WiFi Dongle Section -->
+            <div class="card">
+                <h2>Wi-Fi USB Dongle</h2>
+                <p>A compact device that enables computers and other devices to connect to wireless networks seamlessly</p>
+                
+                <div class="dongle-steps">
+                    <div class="step">
+                        <h3>Plug in the Dongle</h3>
+                        <p>Insert the USB WiFi adapter into an available USB port on your computer or device. Ensure the connection is secure.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Install Drivers</h3>
+                        <p>Insert the included driver CD or download the latest drivers from the manufacturer's website for optimal performance.</p>
+                    </div>
+                    <div class="step">
+                        <h3>Connect to WiFi</h3>
+                        <p>Click the WiFi/Network icon (🌐) in your system tray (Windows) or menu bar (macOS). Select your network name (SSID), enter the password, and you're ready to browse!</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Networks Section -->
+            <div class="networks-grid">
+                <div class="card">
+                    <h2>Internet Collaboration</h2>
+                    <p>Cloud platforms, real-time editors, and video calls enable seamless global collaboration. APIs integrate tools, while AI assists with workflows—turning distant teams into a unified force, innovating faster across borders.</p>
+                </div>
+
+                <div class="card">
+                    <h2>Networking & Wireless Connection</h2>
+                    <p><strong>Networking</strong> and wireless connections are crucial for devices to communicate and share resources. Key aspects include network topologies (Star, Bus), network devices (Routers, Switches, Modems, NICs), protocols (TCP/IP, HTTP), and network types (LAN, WAN). Wireless technologies like Wi-Fi (802.11 standards) and Bluetooth enable cable-free communication.</p>
+                </div>
+
+                <div class="card">
+                    <h2>Server Network Functionality</h2>
+                    <p>Server networks provide centralized services and management to client devices. They handle client requests, manage data storage, share resources like printers, control network traffic, manage DNS and DHCP services, and implement security measures including firewalls, encryption, and access controls.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="audio" class="audio-section">
+            <div class="audio-container">
+                <h2 style="color: #eaeeef; margin-bottom: 1rem;"> Audio  Content </h2>
+                <audio controls>
+                    <source src="audio.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </section>
     </div>
+
 </body>
 </html>

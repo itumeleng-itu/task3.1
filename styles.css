@@ -1,138 +1,299 @@
-body{
-        background: #020024;
-    background: linear-gradient(182deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 14%, rgba(0, 212, 255, 1) 100%);
-    
-}
-.nav-bar{
-    display: flex;
-    justify-content: center;
-    gap:8px;
-    margin: auto;
-    li{
-        list-style-type: none;
-        a{
-            text-decoration: none;
-            color: rgb(248, 244, 244);
-            font-size: large;
-            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-            font-weight: bold;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        a:hover{
-            color: rgb(36, 4, 124);
-        }
-    }
-}
-.heading{
-    justify-items: center;
-    h1,p{
-        color:white
-    }
-}
-.dongle{
-    background: #020024;
-    background: linear-gradient(182deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 14%, rgba(0, 212, 255, 1) 100%);
-    border: 2px solid white;
-    border-radius: 15px;
-    .def{
-        align-items: center;
-        justify-items: center;
-        h2,p{
-            color:white;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-        }
-    }
-.dongle:hover{
-    transform: translateY(0.5em);
-    box-shadow: 2px 2px 4px black;
-    
-}
-.work{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    .step{
-        border: 2px solid white;
-        border-radius: 15px;
-        margin: 10px;
-        h2{
-            text-align: center;
-            color: white;
-        }
-        p{
-            text-align: center;
-            color: white;
-        }
-    }
-    .step:hover{
-        transform: translateY(0.5em);
-        box-shadow: 2px 2px 4px black;
-    }
-    }
-}
-.networks{
-    border: 2px solid white;
-    border-radius: 15px;
-    background: #020024;
-    background: linear-gradient(352deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 14%, rgba(0, 212, 255, 1) 100%);
-    display:grid;
-    grid-template-columns: 1fr 1fr;
 
-    .collabs{
-        border: 2px solid white;
-        border-radius: 15px;
-        margin: 10px;
-        h2{
-            text-align: center;
-            color: white;
-        }
-        p{
-            text-align: center;
-            color: white;
+body {
+    background: linear-gradient(182deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 14%, rgba(0, 212, 255, 1) 100%);
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+
+    /* Navigation */         
+    nav {
+        padding: 1rem 0;
+        position: sticky;
+        top: 0;
+        background: rgba(2, 0, 36, 0.9);
+        backdrop-filter: blur(10px);
+        z-index: 100;
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: #f8f4f4;
+                font-size: 1.1rem;
+                font-weight: 600;
+                padding: 10px 20px;
+                border-radius: 25px;
+                transition: all 0.3s ease;
+                position: relative;
+                overflow: hidden;
+            }
+            a::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: -100%;
+                width: 100%;
+                height: 100%;
+                
+                transition: left 0.5s;
+            }
+            a:hover::before {
+                left: 100%;
+            }
+            a:hover {
+                color: #00d4ff;
+                background: rgba(255, 255, 255, 0.1);
+                transform: translateY(-2px);
+            }
         }
     }
-    .collabs:hover{
-        transform: translateY(0.5em);
-        box-shadow: 2px 2px 4px black;
+    /* Header */
+    .heading {
+        text-align: center;
+        padding: 3rem 1rem;
+        margin-bottom: 2rem;
+        h1 {
+            color: white;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 0 0 20px rgba(0, 212, 255, 0.5);
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1.3rem;
+            font-weight: 300;
+        }
     }
-    .contain{
-        .networking{
-            border: 2px solid white;
-        border-radius: 15px;
-        padding: 15px;
-        h2{
-            text-align: center;
-            color: white;
+    /* Container */
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+        /* Card styling */
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            margin: 2rem 0;
+            padding: 2rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            h2 {
+                color: #00d4ff;
+                font-size: 1.8rem;
+                margin-bottom: 1rem;
+                text-align: center;
+            }
+            p {
+                color: rgba(255, 255, 255, 0.9);
+                text-align: center;
+                font-size: 1.1rem;
+            }
         }
-        p{
-            color: white;
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            border-color: rgba(0, 212, 255, 0.5);
         }
+        /* WiFi Dongle Section */
+        .dongle-steps {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            .step {
+                background: rgba(255, 255, 255, 0.05);
+                border: 1px solid rgba(255, 255, 255, 0.1);
+                border-radius: 15px;
+                padding: 1.5rem;
+                transition: all 0.3s ease;
+                position: relative;
+                h3 {
+                    color: white;
+                    margin-bottom: 0.5rem;
+                    font-size: 1.2rem;
+                }
+                p {
+                    color: rgba(255, 255, 255, 0.8);
+                    text-align: left;
+                    font-size: 1rem;
+                }
+            }
+            .step:hover {
+                transform: translateY(-5px);
+                background: rgba(255, 255, 255, 0.1);
+                border-color: rgba(0, 212, 255, 0.3);
+            }
         }
-        .networking:hover{
-        transform: translateY(0.5em);
-        box-shadow: 2px 2px 4px black;
     }
-    .functionality{
-            border: 2px solid white;
-        border-radius: 15px;
-        padding: 15px;
-        h2{
-            text-align: center;
-            color: white;
-        }
-        p{
-            color: white;
-        }
-        }
-        .functionality:hover{
-        transform: translateY(0.5em);
-        box-shadow: 2px 2px 4px black;
+    /* Networks Section */
+    .networks-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+        margin: 2rem 0;
     }
-    
+    /* Audio Section */
+    .audio-section {
+        text-align: center;
+        padding: 2rem;
+        margin: 2rem 0;
+        .audio-container {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 20px;
+            display: inline-block;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            audio {
+                width: 100%;
+                max-width: 400px;
+                height: 50px;
+            }
+        }
+        
     }
 }
-.audio{
-        height:30px;
-        align-self: center;
-        align-content: center;
-        justify-content: center;
-        padding: 100px;
+       
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    body {
+        nav .nav-bar {
+            gap: 25px;
+            flex-wrap: wrap;
+            a {
+                font-size: 1rem;
+                padding: 9px 18px;
+            }
+        }
+        
+        .heading {
+            padding: 2.5rem 1rem;
+            h1 {
+                font-size: 2.8rem;
+            }
+            p {
+                font-size: 1.2rem;
+            }
+        }
+        
+        .container {
+            .card {
+                padding: 1.5rem;
+                h2 {
+                    font-size: 1.6rem;
+                }
+            }
+            
+            .dongle-steps {
+                grid-template-columns: 1fr;
+                gap: 1.2rem;
+            }
+        }
+        
+        .networks-grid {
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+        
+        .audio-section .audio-container audio {
+            max-width: 350px;
+        }
     }
+}
+
+/* Medium Devices (small laptops, 769px to 1024px) */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    body {
+        .container {
+            max-width: 900px;
+            .dongle-steps {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.3rem;
+                .step:last-child {
+                    grid-column: 1 / -1;
+                    max-width: 500px;
+                    margin: 0 auto;
+                }
+            }
+        }
+        
+        .heading h1 {
+            font-size: 3.2rem;
+        }
+        
+        .networks-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.8rem;
+        }
+    }
+}
+
+/* Large Devices (desktops, 1025px to 1440px) */
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    body .container {
+        max-width: 1100px;
+    }
+}
+
+/* Extra Large Devices (large desktops, 1441px and up) */
+@media only screen and (min-width: 1441px) {
+    body {
+        .container {
+            max-width: 1400px;
+            .card {
+                padding: 2.5rem;
+            }
+            .dongle-steps {
+                gap: 2rem;
+            }
+        }
+        
+        .heading {
+            h1 {
+                font-size: 4rem;
+            }
+            p {
+                font-size: 1.4rem;
+            }
+        }
+        
+        .networks-grid {
+            gap: 2.5rem;
+        }
+    }
+}
+
+/* Landscape Orientation for Mobile Devices */
+@media only screen and (max-height: 500px) and (orientation: landscape) {
+    body {
+        .heading {
+            padding: 1rem;
+            h1 {
+                font-size: 2rem;
+            }
+            p {
+                font-size: 1rem;
+            }
+        }
+        
+        .container .card {
+            margin: 1rem 0;
+            padding: 1rem;
+        }
+        
+        .audio-section {
+            padding: 1rem;
+        }
+    }
+}
