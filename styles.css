@@ -230,7 +230,6 @@ nav {
     }
 }
 
-/* Landscape orientation for mobile */
 @media (max-height: 500px) and (orientation: landscape) {
     .heading {
         padding: 0.7rem;
