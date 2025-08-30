@@ -7,7 +7,6 @@ A simple web page that explores networking components, wireless connections, and
 - `networks-and-servers.html` — Main HTML file for the web page.
 - `styles.css` — Custom CSS styles for layout and design.
 - `images/` — Contains images used in the web page (backgrounds, icons, diagrams).
-- `Smiley_Ft_Drake_-_2_Mazza.com.mp3` — Audio file for demonstration.
 - `networking.docx` — Documentation file.
 
 ## Features
